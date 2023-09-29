@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .vocab {
+            color: lime;
+            text-decoration: underline;
+            transition: all 200ms;
+        }
+
+
+        .vocab:hover {
+            color: white;
+            background-color: green;
+            font-size: 26px;
+            padding: 5px;
+        }
+
+
+        .different {
+            color: blue;
+            transition: all 200ms;
+        }
+
+
+        .different:hover {
+            color: LightSkyBlue;
+            font-size: 26px;
+            background-color: darkblue;
+            padding: 5px;
+        }
+
+
+        .same {
+            color: red;
+            transition: all 200ms;
+        }
+
+
+        .same:hover {
+            color: coral;
+            font-size: 26px;
+            background-color: maroon;
+            padding: 5px;
+        }
+
+
+        .coolborder {
+            border: 1px solid;
+            width: 20%;
+            transition: all 300ms;
+            font-size: 64px;
+        }
+
+
+        .coolborder:hover {
+            background-color: darkseagreen;
+            border: 1px solid black;
+            color: white;
+            font-size: 68px;
+            width: 23%;
+            box-shadow: 6px 6px 2px lightgray;
+        }
+
+
+        .coolerborder {
+            border: 1px solid;
+            width: 25%;
+            transition: all 300ms;
+            font-size: 48px;
+        }
+
+
+        .coolerborder:hover {
+            background-color: darkseagreen;
+            border: 1px solid black;
+            color: white;
+            font-size: 52px;
+            width: 28%;
+            box-shadow: 6px 6px 2px lightgray;
+        }
+
+
+        a {
+            text-decoration: none;
+            font-size: 33px;
+            transition: all 200ms;
+        }
+
+
+        a:hover {
+            font-size: 38px;
+        }
+
+
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+
+        a.stickybutton {
+            color: skyblue;
+            font-size: 24px;
+            position: sticky;
+            top: 0;
+            border: none 1px;
+            border-radius: 12px;
+            background-color: skyblue opacity:0.5;
+            font-weight: bolder;
+        }
+
+
+        a.stickybutton:hover {
+            background-color: skyblue;
+            color: teal;
+            font-size: 26px;
+        }
+
+
+        a.secondunit {
+            color: darkseagreen;
+        }
+
+
+        a.secondunit:hover {
+            color: #597559;
+            filter: drop-shadow(6px 6px 2px lightgray);
+        }
+
+
+        a.thirdunit {
+            color: khaki;
+        }
+
+
+        a.thirdunit:hover {
+            color: #B4AC6B;
+            filter: drop-shadow(6px 6px 2px lightgray);
+        }
+
+
+        h2.thirdunit:hover {
+            background-color: khaki;
+        }
+
+
+        h1.thirdunit:hover {
+            color: khaki;
+        }
+
+
+        p {
+            line-height: 175%;
+        }
+
+
+        br {
+            line-height: 200%;
+        }
+
+
+        .dropshadowthingy {
+            filter: drop-shadow(0px 0px 0px white);
+            transition: filter 300ms, font-size 300ms, color 300ms;
+        }
+
+
+        .dropshadowthingy:hover {
+            filter: drop-shadow(4px 4px 2px gray);
+            font-size: 52px;
+            color: darkseagreen;
+        }
+
+
+        .alkalimetal {
+            transition: all 200ms;
+        }
+
+
+        .alkalimetal:hover {
+            color: teal;
+            font-size: 28px;
+            font-weight: bolder;
+            filter: drop-shadow(4px 4px 2px gray);
+        }
+
+
+        .halogen {
+            transition: all 200ms;
+        }
+
+
+        .halogen:hover {
+            color: darkblue;
+            font-size: 28px;
+            font-weight: bolder;
+            filter: drop-shadow(4px 4px 2px gray);
+        }
+
+
+        .nonmetal {
+            transition: all 200ms;
+        }
+
+
+        .nonmetal:hover {
+            color: #31608c;
+            font-size: 28px;
+            font-weight: bolder;
+            filter: drop-shadow(4px 4px 2px gray);
+        }
+
+
+        .transition {
+            transition: all 200ms;
+        }
+
+
+        .transition:hover {
+            color: #bdb5d5;
+            font-size: 28px;
+            font-weight: bolder;
+            filter: drop-shadow(4px 4px 2px gray);
+        }
+
+
+        .post-transition {
+            transition: 200ms;
+        }
+
+
+        .post-transition:hover {
+            color: seagreen;
+            font-size: 28px;
+            font-weight: bolder;
+            filter: drop-shadow(4px 4px 2px gray);
+        }
+
+
+        .unitheaderthing {
+            font-family: 'Play', sans-serif;
+        }
+
+
+        .dropdown {
+            display: inline-block;
+            font-size: 32px;
+            border-bottom: dotted 4px orangered;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            transition: all 1s;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            background-color: #f9f9f9;
+            width: 110%;
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            font-weight: bold;
+            transition: all 1s;
+        }
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            
+        }
+    </style>
+</head>
+
+
+<body>
+    <a href="#fallback" class="stickybutton">Back</a>
+    <center>
+        <h1 class="coolerborder" id="fallback">Chem Notes</h1>
+    </center>
+    <div class="dropdown">
+        <span>Navigating The Notes</span>
+        <div class="dropdown-content">
+            <p>Welcome to my little CSS practice / chemistry study guide. Hopefully this guide should give all the information needed for you (and I) to pass every chemistry test. I'm providing some guidelines for looking through these notes.
+                <hr>Vocabulary terms are underlined and <span class="vocab">green.</span>
+                <hr> You can mouse over chemical elements to see different colors. These colors are as they appear by family when you Google search 'Periodic Table'.<br><br>You can try it with the below example.<br><br><span class="nonmetal">Hydrogen (H)</span>
+                <hr>You will always see a blue "Back" button at the top left corner of this site. Click this button to immediately return to the table of contents.</p>
+        </div>
+    </div>
+    <br><br><br>
+    <hr>
+    <center>
+        <h2>Jump to a lesson's notes
+            <h2>
+                <center>
+                    <hr>
+                    <div class="unitbox">
+                        <h2 class="unitheaderthing">Unit 2</h2>
+                        <center><a href="#secondufirstl" class="secondunit">2.1 - Properties of Matter</a></center><br>
+                        <center><a href="#secondusecondl" class="secondunit">2.2 - Mixtures</a></center><br>
+                        <center><a href="#seconduthirdl" class="secondunit">2.3 - Elements and Compounds</a></center><br>
+                        <center><a href="#secondufourthl" class="secondunit">2.4 - Chemical Reactions</a></center>
+                    </div>
+                    <br>
+                    <div class="unitbox">
+                        <h2 class="unitheaderthing">Unit 3</h2>
+                        <center><a href="#thirdufirstl" class="thirdunit">3.1 - Using and Expressing Measurements</a></center><br>
+                        <center><a href="#thirdusecondl" class="thirdunit">3.2 - Units of Measurement</a></center><br>
+                        <center><a href="#thirduthirdl" class="thirdunit">3.3 - Solving Conversion Problems</a></center>
+                    </div>
+                    <br>
+                    <hr id="secondufirstl">
+                    <h2 class="coolborder">2.1</h2>
+                    <h1 class="dropshadowthingy">Properties of Matter</h1>
+                    <p>
+                        Anything with a uniform and definite composition is a <span class="vocab">substance.</span>
+                        <br>
+                        <br> <span class="post-transition">Aluminum (Al)</span> / <span class="transition">Copper (Cu)</span>
+                        <ul>
+                            <li class="different">Aluminum is more reflective</li>
+                            <li class="different">Copper can scratch Aluminum due to being harder</li>
+                            <li class="different">Copper conducts electricity much better and thus is used for wires</li>
+                            <li class="same">They are both malleable and can be pounded into sheets</li>
+                        </ul>
+                        <br>
+                        <br> Hardness, Color, Conductivity, and Malleability are all physical attributes used in identifying substances.
+                        <br>
+                        <br> States of matter, boiling/freezing points, and odors are all more broad identifiers.
+                        <br><br>
+                        <span class="vocab">Solids</span> have definite shapes not contingent on a container
+                        <ul>
+                            <li>Particles are firmly packed together</li>
+                            <br>
+                            <li>Exceedingly hard to compress</li>
+                        </ul>
+                        <br>
+                        <span class="vocab">Liquids</span> take the shape of the container they are in, whether it be a cup or a riverbed
+                        <ul>
+                            <li>Particles are still somewhat packed in but freely flowing</li>
+                            <br>
+                            <li>Near impossible to compress</li>
+                            <br>
+                            <li>Slightly expands when heated</li>
+                            <br>
+                            <li><strong>Fixed Volume</strong></li>
+                            <br>
+                        </ul>
+                        <span class="vocab">Gasses</span> take the shape of its' container but will expand to fit the volume
+                        <br><br>
+                        <ul>
+                            <li>Particles are loosely packed</li>
+                        </ul>
+                        <br>
+                        <br> When a substance is melted, the attributes of the substance will change, but its' composition <em>WILL NOT</em>
+                        <br>
+                        <br> The terms <em>gas</em> and <em>vapor</em> shouldn't be used interchangeably. A vapor is a gas derived from another state of matter at room temperature.
+                        <br>
+                        <br>
+                        <span class="vocab">Intensive properties</span> depend on the type of substance. <span class="vocab">Extensive properties</span> vary by the amounts of the substance.
+                    </p>
+                    <br>
+                    <hr id="secondusecondl"><br>
+                    <h2 class="coolborder">2.2</h2>
+                    <h1 class="dropshadowthingy">Mixtures</h1>
+                    <p>
+                        <span class="vocab">Heterogeneous Mixtures</span> are not even distributions of the components (chicken noodle soup)
+                        <br>
+                        <br>
+                        <span class="vocab">Homogenous Mixtures</span> have a consistent quantity of each component (olive oil)
+                        <br>
+                        <br> Homogenous Mixtures are also referred to as solutions
+                        <br>
+                        <br>
+                        <span class="vocab">Phases</span> are parts of samples with uniform composition and properties
+                        <br>
+                        <br>
+                        <span class="vocab">Filtration</span> is running a substance through another (coffee).
+                        <br>
+                        <br> Filtration depends on the size of the particles of the given substance(s).
+                        <br>
+                        <br>
+                        <span class="vocab">Distillation</span> involves different substances boiled into vapor and is then recondensed into liquid (beer).
+                        <br>
+                        <br> Distillation depends on the boiling points of the substances.
+                        <br>
+                        <hr id="seconduthirdl">
+                        <br>
+                    </p>
+                    <h2 class="coolborder">2.3</h2>
+                    <h1 class="dropshadowthingy">Elements and Compounds</h1>
+                    <p>
+                        <span class="vocab">Elements</span> are the most basic building block of matter
+                        <br>
+                        <br>
+                        <span class="vocab">Compounds</span> are combinations of elements in fixed proportions
+                        <br>
+                        <br> Elements cannot be broken down any further, whereas compounds can.
+                        <br>
+                        <br> Heating may be used to break down compounds.
+                        <br>
+                        <br><span class="alkalimetal">Sodium (Na)</span> is a soft silver metal with explosive capabilities.
+                        <br>
+                        <br> <span class="halogen">Chlorine (Cl)</span> is a deadly poisonous yellow gas.
+                        <br>
+                        <br> <span class="alkalimetal">Sodium</span> <span class="halogen">Chloride</span> <span class="alkalimetal">(Na</span><span class="halogen">Cl)</span> (the combination of the two) is simply table salt.
+                        <br>
+                        <br> The Periodic Table was originally developed by a Swedish man named Jacob Berzelius, with evident roots in Latin (e.g. <span class="transition">Gold (Au)</span> = <em>aurum</em>)
+                        <br>
+                        <br> A column on the Periodic Table is a <span class="vocab">Group</span>.
+                        <br>
+                        <br> A row on the Periodic Table is a <span class="vocab">Period</span>.
+                        <br>
+                        <br> Substances haved fixed composition, and mixtures vary in composition.
+                        <br>
+                        <br> Water = <span class="nonmetal">H<sub>2</sub>O</span>
+                        <br> Sucrose = <span class="nonmetal">C<sub>12</sub>H<sub>22</sub>O<sub>11</sub> </span>
+                    </p>
+                    <br>
+                    <hr id="secondufourthl">
+                    <br>
+                    <h2 class="coolborder">2.4</h2>
+                    <h1 class="dropshadowthingy">Chemical Reactions</h1>
+                    <p>
+                        Chemical changes <em>always</em> have a change in composition. Physical changes <em>never</em> do so.
+                        <br>
+                        <br> Burn, rot, rust, decompose, ferment, and explode are words use to describe chemical changes.
+                        <br>
+                        <br> A substance's ability to undergo a specific chemical change is a <span class="vocab">chemical property</span>.
+                        <br>
+                        <br> Breaking off a chunk of coal is physical, lighting it ablaze and having it burn is chemical.
+                        <br>
+                        <br> Possible indicators of chemical changes are changes in color and temperature, emission of gas, and formation of precipitate.
+                        <br>
+                        <br> A <span class="vocab">precipitate</span> is a solid derived from a liquid mixture that settles (cottage cheese curdling from milk)
+                        <br>
+                        <br> However, you cannot be assured of chemical change even with any of these clues unless you <em>test the composition of the product against its' reactants</em>.
+                        <br>
+                        <br> Chemical changes are strictly <em>irreversible</em>, physical changes may or may not be undone.
+                        <br>
+                        <br> The mass of the product(s) = The mass of the reactant(s).
+                    </p>
+                    <br>
+                    <hr id="thirdufirstl">
+                    <br>
+                    <h2 class="coolborder thirdunit">3.1</h2>
+                    <h1 class="dropshadowthingy thirdunit">Using and Expressing Meaurements</h1>
+                    <p>
+                    </p>
+                    <br>
+                    <hr id="thirdusecondl">
+                    <br>
+                    <h2 class="coolborder thirdunit">3.2</h2>
+                    <h1 class="dropshadowthingy thirdunit">Units of Measurement</h1>
+                    <p>
+                    </p>
+                    <br>
+                    <hr id="thirduthirdl">
+                    <br>
+                    <h2 class="coolborder thirdunit">3.3</h2>
+                    <h1 class="dropshadowthingy thirdunit">Solving Conversion Problems</h1>
+</body>
+
+
+                </html>
