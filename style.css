@@ -1,3 +1,9 @@
+.vocab {
+            color: white;
+            text-decoration:underline;
+            font-size:24px;
+            transition: all 200ms;
+}
 .vocab:hover {
             color: white;
             background-color: green;
