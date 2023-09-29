@@ -1,0 +1,265 @@
+.vocab:hover {
+            color: white;
+            background-color: green;
+            font-size: 26px;
+            padding: 5px;
+        }
+
+
+        .different {
+            color: blue;
+            transition: all 200ms;
+        }
+
+
+        .different:hover {
+            color: LightSkyBlue;
+            font-size: 26px;
+            background-color: darkblue;
+            padding: 5px;
+        }
+
+
+        .same {
+            color: red;
+            transition: all 200ms;
+        }
+
+
+        .same:hover {
+            color: coral;
+            font-size: 26px;
+            background-color: maroon;
+            padding: 5px;
+        }
+
+
+        .coolborder {
+            border: 1px solid;
+            width: 20%;
+            transition: all 300ms;
+            font-size: 64px;
+        }
+
+
+        .coolborder:hover {
+            background-color: darkseagreen;
+            border: 1px solid black;
+            color: white;
+            font-size: 68px;
+            width: 23%;
+            box-shadow: 6px 6px 2px lightgray;
+        }
+
+
+        .coolerborder {
+            border: 1px solid;
+            width: 25%;
+            transition: all 300ms;
+            font-size: 48px;
+        }
+
+
+        .coolerborder:hover {
+            background-color: darkseagreen;
+            border: 1px solid black;
+            color: white;
+            font-size: 52px;
+            width: 28%;
+            box-shadow: 6px 6px 2px lightgray;
+        }
+
+
+        a {
+            text-decoration: none;
+            font-size: 33px;
+            transition: all 200ms;
+        }
+
+
+        a:hover {
+            font-size: 38px;
+        }
+
+
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+
+        a.stickybutton {
+            color: skyblue;
+            font-size: 24px;
+            position: sticky;
+            top: 0;
+            border: none 1px;
+            border-radius: 12px;
+            background-color: skyblue opacity:0.5;
+            font-weight: bolder;
+        }
+
+
+        a.stickybutton:hover {
+            background-color: skyblue;
+            color: teal;
+            font-size: 26px;
+        }
+
+
+        a.secondunit {
+            color: darkseagreen;
+        }
+
+
+        a.secondunit:hover {
+            color: #597559;
+            filter: drop-shadow(6px 6px 2px lightgray);
+        }
+
+
+        a.thirdunit {
+            color: khaki;
+        }
+
+
+        a.thirdunit:hover {
+            color: #B4AC6B;
+            filter: drop-shadow(6px 6px 2px lightgray);
+        }
+
+
+        h2.thirdunit:hover {
+            background-color: khaki;
+        }
+
+
+        h1.thirdunit:hover {
+            color: khaki;
+        }
+
+
+        p {
+            line-height: 175%;
+        }
+
+
+        br {
+            line-height: 200%;
+        }
+
+
+        .dropshadowthingy {
+            filter: drop-shadow(0px 0px 0px white);
+            transition: filter 300ms, font-size 300ms, color 300ms;
+        }
+
+
+        .dropshadowthingy:hover {
+            filter: drop-shadow(4px 4px 2px gray);
+            font-size: 52px;
+            color: darkseagreen;
+        }
+
+
+        .alkalimetal {
+            transition: all 200ms;
+        }
+
+
+        .alkalimetal:hover {
+            color: teal;
+            font-size: 28px;
+            font-weight: bolder;
+            filter: drop-shadow(4px 4px 2px gray);
+        }
+
+
+        .halogen {
+            transition: all 200ms;
+        }
+
+
+        .halogen:hover {
+            color: darkblue;
+            font-size: 28px;
+            font-weight: bolder;
+            filter: drop-shadow(4px 4px 2px gray);
+        }
+
+
+        .nonmetal {
+            transition: all 200ms;
+        }
+
+
+        .nonmetal:hover {
+            color: #31608c;
+            font-size: 28px;
+            font-weight: bolder;
+            filter: drop-shadow(4px 4px 2px gray);
+        }
+
+
+        .transition {
+            transition: all 200ms;
+        }
+
+
+        .transition:hover {
+            color: #bdb5d5;
+            font-size: 28px;
+            font-weight: bolder;
+            filter: drop-shadow(4px 4px 2px gray);
+        }
+
+
+        .post-transition {
+            transition: 200ms;
+        }
+
+
+        .post-transition:hover {
+            color: seagreen;
+            font-size: 28px;
+            font-weight: bolder;
+            filter: drop-shadow(4px 4px 2px gray);
+        }
+
+
+        .unitheaderthing {
+            font-family: 'Play', sans-serif;
+        }
+
+
+        .dropdown {
+            display: inline-block;
+            font-size: 32px;
+            border-bottom: dotted 4px orangered;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            transition: all 1s;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            background-color: #f9f9f9;
+            width: 110%;
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            font-weight: bold;
+            transition: all 1s;
+        }
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            
+        }
