@@ -1,4 +1,4 @@
-.vocab {
+ .vocab {
             color: lime;
             text-decoration:underline;
             font-size:24px;
@@ -81,6 +81,7 @@
             transition: all 300ms;
             font-size: 48px;
             margin:10px auto 10px auto;
+            text-align:center;
         }
 
 
