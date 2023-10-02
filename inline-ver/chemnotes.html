@@ -12,13 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <style>
-    .vocab {
+        .vocab {
             color: lime;
-            text-decoration:underline;
-            font-size:24px;
+            text-decoration: underline;
+            font-size: 24px;
             transition: all 200ms;
-}
-.vocab:hover {
+        }
+
+        .vocab:hover {
             color: white;
             background-color: green;
             font-size: 26px;
@@ -59,7 +60,7 @@
             width: 20%;
             transition: all 300ms;
             font-size: 64px;
-            margin:10px auto 10px auto;
+            margin: 10px auto 10px auto;
         }
 
 
@@ -89,13 +90,14 @@
             width: 28%;
             box-shadow: 6px 6px 2px lightgray;
         }
+
         .guideborder {
             border: 1px solid;
             width: 50%;
             transition: all 300ms;
             font-size: 48px;
-            margin:10px auto 10px auto;
-            text-align:center;
+            margin: 10px auto 10px auto;
+            text-align: center;
         }
 
 
@@ -106,7 +108,7 @@
             font-size: 52px;
             width: 55%;
             box-shadow: 6px 6px 2px lightgray;
-        } 
+        }
 
 
         a {
@@ -179,7 +181,7 @@
 
         p {
             line-height: 175%;
-            text-align:center;
+            text-align: center;
         }
 
 
@@ -301,7 +303,7 @@
             display: block;
             text-align: center;
             margin: 10px auto 10px auto;
-            
+
         }
     </style>
 </head>
@@ -316,10 +318,14 @@
     <hr>
     <br>
     <h1 class="guideborder">Navigating the Notes</h1>
-                <hr>Vocabulary terms are underlined and <span class="vocab">green.</span>
-                <hr> You can mouse over chemical elements to see different colors. These colors are as they appear by family when you Google search 'Periodic Table'.<br><br>You can try it with the below example.<br><br><span class="nonmetal">Hydrogen (H)</span>
-                <hr>You will always see a blue "Back" button at the top left corner of this site. Click this button to immediately return to the table of contents.</p>
-        </div>
+    <p>
+        <hr>Vocabulary terms are underlined and <span class="vocab">green.</span>
+        <hr> You can mouse over chemical elements to see different colors. These colors are as they appear by family when you Google search 'Periodic Table'.<br><br>You can try it with the below example.<br><br><span class="nonmetal">Hydrogen (H)</span>
+        <hr>You will always see a blue "Back" button at the top left corner of this site. Click this button to immediately return to the table of contents.
+        <br>
+        <br> For 3.1, coeffecients are <span class="same">red</span> and exponents are <span class="different">blue</span>.
+    </p>
+    </div>
     </div>
     <hr>
     <center>
@@ -478,6 +484,29 @@
                     <h2 class="coolborder thirdunit">3.1</h2>
                     <h1 class="dropshadowthingy thirdunit">Using and Expressing Meaurements</h1>
                     <p>
+                        In chemistry you will find very small and very large numbers.
+                        <br>
+                        <br>
+                        <span class="vocab">Scientific Notation</span> is a way to shorten these numbers 6,300,000 = <span class="same">6.3</span> x 10<sup class="different">6</sup>
+                        <br>
+                        <br> There are <span class="vocab">exponents </span>(Elementary school level concept) and <span class="vocab">coefficients</span>, being the numbers that aren't exponents.
+                        <br>
+                        <br> 94,700 = <span class="same">9.47</span> x 10<sup class="different">4</sup>
+                        <br><br> Numbers larger than 10 will have <em>positive</em> exponents and shift to the left.
+                        <br> Numbers smaller than 10 will have <em>negative</em> exponents and will shift to the right.
+                        <br>
+                        <br> Addition and subtraction in scientific notation requires that the exponents be the same.
+                        <br>
+                        <span class="same">5.4</span> x 10<sup class="different">3</sup> + <span class="same">8.0</span> x 10<sup class="different">2</sup> = <span class="same">5.4</span> x 10<sup class="different">3</sup> + <span class="same">0.80</span> x 10<sup class="different">3</sup> (A shift to the left indicates negative)
+                        <br> (
+                        <span class="same">5.4</span> + <span class="same">0.80</span>) x 10<sup class="different">3</sup> = <span class="same">6.2</span> x 10<sup class="different">3</sup>
+                        <br>
+                        <br> To multiply in scientific notation, multiply the coefficients and add the exponents. LIke with addition, the exponents need to be identical.
+                        <br>
+                        <br> (
+                        <span class="same">8.0</span> x 10<sup class="different">-2</sup>) x (<span class="same">7.0</span> x 10<sup class="different">-5</sup>) = (<span class="same">8.0</span> x <span class="same">7.0</span>) x 10<sup class="different">-2</sup> + <sup class="different">(-5)</sup>
+                        <br>
+                        <span class="same">56</span> x 10<sup class="different">-7</sup> = <span class="same">5.6</span> x 10<sup class="different">-6</sup>
                     </p>
                     <br>
                     <hr id="thirdusecondl">
@@ -494,4 +523,4 @@
 </body>
 
 
-                </html>
+</html>
