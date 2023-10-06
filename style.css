@@ -219,7 +219,7 @@
 
         .dropshadowthingy:hover {
             filter: drop-shadow(4px 4px 2px gray);
-            font-size: 52px;
+            font-size: 50px;
             color: darkseagreen;
         }
 
