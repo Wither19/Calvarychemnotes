@@ -38,8 +38,16 @@
             background-color: maroon;
             padding: 5px;
         }
-
-
+        .neutral {
+         color:RebeccaPurple;
+         transition:all 200ms;
+        }
+        .neutral:hover {
+         color:Violet;
+         font-size:26px;
+         background-color: RebccaPurple;
+         padding: 5px;
+        }
         .coolborder {
             border: 1px solid;
             width: 20%;
