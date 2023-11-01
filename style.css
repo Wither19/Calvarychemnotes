@@ -295,8 +295,15 @@
             font-weight: bolder;
             filter: drop-shadow(4px 4px 2px gray);
         }
-
-
+        .noble {
+         transition: 200ms;
+        }
+        .noble:hover {
+         color: FFC0CB;
+         font-size: 28px;
+         font-weight: bolder;
+         filter: drop-shadow(4px 4px 2px gray);
+        }
         .unitheaderthing {
             font-family: 'Play', sans-serif;
         }
