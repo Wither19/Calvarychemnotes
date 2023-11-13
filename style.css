@@ -192,44 +192,34 @@
             font-size: 50px;
             color: darkseagreen;
         }
-        .alkalimetal, .halogen, .nonmetal, .transition, .post-transition, .noble {
+        .alkalimetal, .halogen, .nonmetal, .metalloid, .transition, .post-transition, .noble {
             transition: all 200ms;
+        }
+        .alkalimetal:hover, .halogen:hover, .nonmetal:hover, .metalloid:hover, .transition:hover, .post-transition:hover, .noble:hover {
+            font-size: 28px;
+            font-weight: bolder;
+            filter: drop-shadow(4px 4px 2px gray);
         }
         .alkalimetal:hover {
             color: teal;
-            font-size: 28px;
-            font-weight: bolder;
-            filter: drop-shadow(4px 4px 2px gray);
         }
         .halogen:hover {
             color: darkblue;
-            font-size: 28px;
-            font-weight: bolder;
-            filter: drop-shadow(4px 4px 2px gray);
         }
         .nonmetal:hover {
             color: #31608c;
-            font-size: 28px;
-            font-weight: bolder;
-            filter: drop-shadow(4px 4px 2px gray);
+        }
+        .metalloid:hover {
+            color: #857d24;
         }
         .transition:hover {
             color: #bdb5d5;
-            font-size: 28px;
-            font-weight: bolder;
-            filter: drop-shadow(4px 4px 2px gray);
         }
         .post-transition:hover {
             color: seagreen;
-            font-size: 28px;
-            font-weight: bolder;
-            filter: drop-shadow(4px 4px 2px gray);
         }
         .noble:hover {
-         color: FFC0CB;
-         font-size: 28px;
-         font-weight: bolder;
-         filter: drop-shadow(4px 4px 2px gray);
+         color: #FFC0CB;
         }
         .unitheaderthing {
             font-family: 'Play', sans-serif;
